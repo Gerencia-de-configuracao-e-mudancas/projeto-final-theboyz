@@ -1,0 +1,63 @@
+/* VARIÁVEIS DE CORES */
+:root {
+  /* Gradiente de fundo */
+  --bg-gradient-start: #001f3f;
+  --bg-gradient-end: #083344;
+
+  /* Menu */
+  --menu-bg: #1e555c;
+  --menu-link-bg: rgba(0, 18, 32, 0.9);
+  --menu-link-border: #b4924a;
+  --menu-link-color: #e8e9eb;
+  --menu-link-hover: red;
+
+  /* Container */
+  --container-border: red;
+}
+
+/* BODY */
+body {
+  background: linear-gradient(
+    180deg,
+    var(--bg-gradient-start) 0%,
+    var(--bg-gradient-end) 100%
+  );
+  min-height: 100vh;
+  color: var(--menu-link-color);
+  font-family: sans-serif;
+  backdrop-filter: blur(10px);
+}
+
+header {
+  flex: 1 1 100vw;
+  height: 100px;
+}
+
+main {
+  display: flex;
+  flex: 20 1 500px;
+  height: calc(100vh - 224px);
+}
+
+footer {
+  width: 100%;
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
+  background-color: #000b14;
+  padding: 2rem 0;
+}
+
+.azul {
+  background-color: blue;
+}
+.amarelo {
+  background-color: red;
+}
+
+.footer-logo {
+  background-color: rgb(53, 43, 76);
+  padding: 1px;
+  border-radius: 8px;
+  border: 2px solid rgb(73, 61, 100);
+}
