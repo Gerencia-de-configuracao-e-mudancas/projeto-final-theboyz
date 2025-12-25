@@ -112,4 +112,95 @@ footer {
   footer {
     text-align: center;
   }
+
+  /* Texto do Preloader no Celular */
+  #preloader p {
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    margin-top: 10px;
+  }
+
+  #preloader .loader-logo {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+}
+/* Configuração global das bolas de carregamento de páginas */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: linear-gradient(180deg, #001f3f 0%, #000b14 100%);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: opacity 0.5s ease-out;
+}
+
+/* Container do Texto e Logo do Preloader */
+#preloader .inner {
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+/* CONFIGURAÇÃO DAS BOLHAS */
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+
+  animation-name: rise;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+
+  z-index: 1;
+}
+
+@keyframes rise {
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 120%;
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+}
+
+/* classe para esconder o preloader no js */
+.loaded {
+  opacity: 0;
+  pointer-events: none;
 }
