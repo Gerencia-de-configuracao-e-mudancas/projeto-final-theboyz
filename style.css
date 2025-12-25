@@ -1,18 +1,11 @@
-/* VARIÁVEIS DE CORES */
 :root {
-  /* Gradiente de fundo */
   --bg-gradient-start: #001f3f;
   --bg-gradient-end: #083344;
-
-  /* Menu */
   --menu-bg: #1e555c;
   --menu-link-bg: rgba(0, 18, 32, 0.9);
   --menu-link-border: #b4924a;
   --menu-link-color: #e8e9eb;
   --menu-link-hover: red;
-
-  /* Container */
-  --container-border: red;
 }
 
 /* BODY */
@@ -23,9 +16,12 @@ body {
     var(--bg-gradient-end) 100%
   );
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   color: var(--menu-link-color);
   font-family: sans-serif;
   backdrop-filter: blur(10px);
+  margin: 0;
 }
 
 header {
