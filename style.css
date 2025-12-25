@@ -39,25 +39,55 @@ main {
   padding: 2rem 0;
 }
 
+/* FOOTER */
 footer {
+  flex: 0 0 auto;
   width: 100%;
   min-height: 25vh;
-  display: flex;
-  align-items: center;
   background-color: #000b14;
   padding: 2rem 0;
+  border-top: 1px solid var(--menu-bg);
+  margin-top: auto;
 }
 
-.azul {
-  background-color: blue;
-}
-.amarelo {
-  background-color: red;
-}
-
+/* ELEMENTOS VISUAIS */
 .footer-logo {
   background-color: rgb(53, 43, 76);
-  padding: 1px;
+  padding: 10px;
   border-radius: 8px;
   border: 2px solid rgb(73, 61, 100);
+  max-width: 150px;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ANIMAÇÃO DO LOGO */
+.interactive-circle-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.spinning-logo {
+  max-height: 400px;
+  width: 100%;
+  max-width: 400px;
+  animation: float 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.3));
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
