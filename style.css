@@ -204,7 +204,3 @@ footer {
   opacity: 0;
   pointer-events: none;
 }
-
-.scale-hover:hover {
-  transform: scale(1.02);
-}
