@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contato</title>
+    <title>Educação</title>
 
     <!-- Dependencias do BootStrap -->
     <link
@@ -51,7 +51,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link fw-semibold" href="./index.html">HOME</a>
+                <a class="nav-link  fw-semibold" href="./index.html">HOME</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fw-semibold" href="./noticias.html"
@@ -59,10 +59,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semibold" href="./educacao.html">EDUCAÇÃO</a>
+                <a class="nav-link active fw-semibold" href="#">EDUCAÇÃO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active fw-semibold" href="#">CONTATO</a>
+                <a class="nav-link fw-semibold" href="./contato.html">CONTATO</a>
               </li>
             </ul>
           </div>
@@ -72,53 +72,61 @@
 
     <main>
       <div class="container">
-        <div class="mt-4 mt-lg-0">
-          <div>
-            <div class="col-lg-6 col-12 text-content p-4">
-              <h1 class="fs-5 fw-bold text-light">
-                Tens alguma dúvida, sugestão ou crítica? Entre em contato
-                conosco!
-              </h1>
-            </div>
+        <h1 class=" display-4 fw-bold text-light">Educação</h1>
+        <div class="row align-items-center gy-4">
+                <div class="col-md-4">
+            <button class="btn btn-dark w-100 p-0 border-0 video-selector" data-video="aula1">
+              <img src="https://via.placeholder.com/300x170" class="img-fluid rounded video-selector" alt="Miniatura">
+              <p class="text-light mt-2">Título do Vídeo 1</p>
+            </button>
           </div>
-        </div>
 
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <form>
-              <div class="row align-items-center">
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >Endereço de Email</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="nome@exemplo.com"
-                  />
-                </div>
-
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label"
-                    >Digite sua mensagem</label
-                  >
-                  <textarea
-                    class="form-control"
-                    id="exampleFormControlTextarea1"
-                    rows="3"
-                  ></textarea>
-                </div>
-                <div class="mb-3 d-flex justify-content-end">
-                  <input class="btn btn-primary" type="submit" value="Enviar" />
-                </div>
-              </div>
-            </form>
+          <div class="col-md-4">
+            <button class="btn btn-dark w-100 p-0 border-0 video-selector" data-video="aula2">
+              <img src="https://via.placeholder.com/300x170" class="img-fluid rounded video-selector" alt="Miniatura">
+              <p class="text-light mt-2">Título do Vídeo 2</p>
+            </button>
           </div>
+
+          <div class="col-md-4">
+            <button class="btn btn-dark w-100 p-0 border-0 video-selector" data-video="aula3">
+              <img src="https://via.placeholder.com/300x170" class="img-fluid rounded video-selector" alt="Miniatura">
+              <p class="text-light mt-2">Título do Vídeo 3</p>
+            </button>
+          </div>
+
+          <div class="col-md-4">
+            <button class="btn btn-dark w-100 p-0 border-0 video-selector" data-video="aula4">
+              <img src="https://via.placeholder.com/300x170" class="img-fluid rounded video-selector" alt="Miniatura">
+              <p class="text-light mt-2">Título do Vídeo 4</p>
+            </button>
+          </div>
+
+          <div class="col-md-4">
+            <button class="btn btn-dark w-100 p-0 border-0 video-selector" data-video="aula5">
+              <img src="https://via.placeholder.com/300x170" class="img-fluid rounded video-selector" alt="Miniatura">
+              <p class="text-light mt-2">Título do Vídeo 5</p>
+            </button>
+          </div>
+
+          <div class="col-md-4">
+            <button class="btn btn-dark w-100 p-0 border-0 video-selector" data-video="aula6">
+              <img src="https://via.placeholder.com/300x170" class="img-fluid rounded video-selector" alt="Miniatura">
+              <p class="text-light mt-2">Título do Vídeo 6</p>
+            </button>
+          </div>
+
+          <div class="col-md-4">
+            <button class="btn btn-dark w-100 p-0 border-0 video-selector" data-video="aula7">
+              <img src="https://via.placeholder.com/300x170" class="img-fluid rounded video-selector" alt="Miniatura">
+              <p class="text-light mt-2">Título do Vídeo 7</p>
+            </button>
+          </div>
+
+
         </div>
       </div>
     </main>
-
     <footer>
       <div class="container">
         <div class="row align-items-center">
@@ -144,5 +152,6 @@
         </div>
       </div>
     </footer>
+    <script type="module" src="./assets/scripts/videoselector.js"></script>
   </body>
 </html>
