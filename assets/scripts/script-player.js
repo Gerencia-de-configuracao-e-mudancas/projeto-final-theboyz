@@ -11,8 +11,8 @@ const elementoCreditos = document.getElementById('video-creditos');
 const bibliotecaVideos = {
     'aula1': {
         titulo: 'Bitcoin e Blockchain EXPLICADOS!',
-        url: 'https://www.youtube.com/embed/QrVMjwF4VKs?si=dubZqAUYrQVPCiQ-',
-        fonte: 'https://www.youtube.com/embed/QrVMjwF4VKs?si=dubZqAUYrQVPCiQ-'
+        url: 'https://www.youtube.com/embed/DqPq8VFziEc?si=UqZV1HDAOO40Foll',
+        fonte: 'https://www.youtube.com/embed/DqPq8VFziEc?si=UqZV1HDAOO40Foll'
     },
     'aula2': {
         titulo: 'A grande CRISE de 2008 e o bitcoin',
