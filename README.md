@@ -24,16 +24,20 @@ O projeto priorizou o desenvolvimento manual (Vanilla) aliado a frameworks de pr
 - **CSS3 Avançado**: Uso de _Keyframes_ para animações (logo giratório, bolhas), _CSS Variables_ e _Gradients_.
 - **Bootstrap 5.3.8**: Grid system responsivo, componentes de Navbar e Accordion.
 - **JavaScript (ES6+)**:
-  - **Módulos**: Organização do código em arquivos funcionais (`script-player.js`, `bolhas.js`).
+  - **Módulos**: Organização do código em arquivos funcionais (`script-player.js`, `bolhas.js`, `videoselector.js`).
+  - **Fetch API**: Implementada para carregar a `bibliotecaVideos` a partir do ficheiro `aulas-lib.json`, desacoplando os dados da lógica de visualização.
+  - **LocalStorage**: Utilizado para gerir o estado de progresso das aulas de forma persistente.
   - **Dynamic Rendering**: O player de vídeo não utiliza páginas estáticas repetidas; ele renderiza o conteúdo (iframe/título) dinamicamente lendo parâmetros `URLSearchParams` da barra de endereço.
   - **DOM Manipulation**: Controle de eventos de carregamento (`window.load`) e travas de rolagem (`body overflow`) para a tela de "Pressurização" (Preloader).
 
 ## ✨ Funcionalidades
 
 1.  **Imersão (Preloader):** Tela de carregamento temática ("Pressurizando...") com animação de bolhas e bloqueio de interação até o carregamento total.
-2.  **Galeria Dinâmica:** Sistema escalável de aulas onde o clique transfere o ID do vídeo para o player via URL.
-3.  **Feed de Notícias:** Seção informativa utilizando componentes interativos (`details`/`summary` estilizazdos).
-4.  **Responsividade:** Layout adaptável para dispositivos móveis, tablets e desktops.
+2.  **Galeria Dinâmica & Escalável:** Sistema onde a biblioteca de vídeos é carregada de forma assíncrona de um banco de dados local (JSON), facilitando a expansão do catálogo sem alterar o código principal.
+3.  **Persistência de Progresso:** Implementação de um sistema que marca visualmente (com um "✅") as aulas já assistidas pelo utilizador, utilizando o armazenamento local do navegador.
+4.  **Interface de Player Integrada:** O player exibe dinamicamente o título, o vídeo e os créditos da fonte original conforme a aula selecionada via URL.
+5.  **Feed de Notícias:** Seção informativa utilizando componentes interativos (`details`/`summary` estilizados) para uma navegação limpa.
+6.  **Responsividade:** Layout adaptável para dispositivos móveis, tablets e desktops.
 
 ## 👥 Equipe de Desenvolvimento
 
@@ -45,11 +49,8 @@ O projeto priorizou o desenvolvimento manual (Vanilla) aliado a frameworks de pr
 
 Seguindo as boas práticas de GCM, utilizamos o **Github Flow** e **Conventional Commits** para manter o histórico organizado:
 
-- `feat`: Novas funcionalidades (ex: lógica do player dinâmico).
+- `feat`: Novas funcionalidades (ex: lógica do player dinâmico e persistência de progresso).
 - `fix`: Correção de bugs (ex: ajuste no z-index do preloader).
 - `style`: Estilização e design (ex: animações CSS).
-- `docs`: Documentação (ex: criação deste README).
+- `docs`: Documentação (ex: atualização deste README).
 - `chore`: Manutenções e configurações.
-
-
-
